@@ -1,7 +1,6 @@
 # GP2040-PicoAnn
 Raspberry Pi PicoなどのRP2040マイコンを搭載したボード向けのゲームパッドファームウェアである[GP2040](https://github.com/FeralAI/GP2040)に連射機能を追加したファームウェアです。
 GP2040は、PC、MiSTer、Android、Raspberry Pi、Nintendo Switch、PS3、PS4（レガシーコントローラ対応）に対応しています。
-
 TURBOボタン以外の基本的な機能は　<https://gp2040.info>　を参照してください。
 
 ## 機能
@@ -38,14 +37,14 @@ TURBOボタン用のConfigとしてBoard Configuration (BoardConfig.h)に以下�
 
 | Name | 説明 | 必須？ |
 | - | - | - |
-| HAS_TURBO | TURBOボタンを有効にするフラグ | No |
+| HAS_TURBO | TURBOボタンを有効にするフラグ | No,省略時はTURBO機能が無効 |
 | PIN_BUTTON_TURBO | TURBOボタン用のGPIO番号を設定 | If HAS_TURBO is enabled |
 | DEFAULT_SHOT_PER_SEC | 連射速度のデフォルト値を設定 | If HAS_TURBO is enabled |
 
 ###### 定義例
 ```
 // TURBO Setting (PicoAnn Additional function)
-#define HAS_TURBO 1                 // TURBO 1:Enable 0:Disable
+#define HAS_TURBO 1                 // TURBO 1:Enable
 #define PIN_BUTTON_TURBO 28         // TURBO Button GPIO No.
 #define DEFAULT_SHOT_PER_SEC 20     // DEFAULT Shot Speed (Shot/Sec)
 ```
