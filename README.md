@@ -29,6 +29,10 @@ TURBOボタン以外の基本的な機能は　<https://gp2040.info>　を参照
 基本的なピンアサインはPico Fighting Boardと同じです。TURBOボタンはGP28とGNDの端子に接続してください。
 ![](PinMapping_PicoAnn.png)
 
+## OLED表示
+TURBO機能のOLD表示は T[連射速度]-[TURBO設定ボタン数] です。
+![](OLED_turbo.png)
+
 ## Development
 
 ファームウェアを独自にビルドしたい人向けの情報です。
