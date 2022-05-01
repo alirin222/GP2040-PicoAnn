@@ -28,6 +28,7 @@ TURBOボタン以外の基本的な機能は　<https://gp2040.info>　を参照
 ## PINマッピング
 
 基本的なピンアサインはPico Fighting Boardと同じです。TURBOボタンはGP28とGNDの端子に接続してください。
+!(PinMapping_PicoAnn.png)
 
 ## Development
 
